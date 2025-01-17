@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+body{
+    display: flex;
+    justify-content: center;
+    
+    height: 70vh;
+    font-family: "Roboto Mono", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+
+}
+[id^='venda']{
+    height: 150px;
+    width: 150px;
+    border: solid black 1px;
+    border-radius: 15px;
+    position: relative;
+}
+#btn-div{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.sells{
+    display: block;
+    gap: 10px;
+}
+#day{
+    margin-top: 10px;
+    margin-left: 40px;
+    border-radius: 6px;
+}
+#removeBTN{
+    height: 15px;
+    width: 15px;
+    border: none;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    top: 14px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+}
+#sell-by-day{
+    margin-left: 40px;
+    margin-top: 54px;
+    height: 40px;
+    width: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    
+}
+#real-simbol{
+    font-size: 20px;
+    margin-top: 50px;
+    margin-left: 5px;
+    height: 27px;
+    width: 20px;
+    background-color: white;
+    position: absolute;
+}
+p{
+    height: 27px;
+    width: 70px;
+    background-color: rgb(199, 198, 198);
+    color: black;
+    border: none;
+    border-radius: 10px;
+}
+
+#pages{
+    width:100%;
+    min-width: 220px;
+    max-width: 350px;
+    height: 50px;
+    background-color: rgb(209, 209, 209);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+}
+a{
+    height: 30px;
+    width: 60px;
+    border: none;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+
+}
+#bc-page1 ,#bc-page2{
+    height:30px;
+    width: 60px;
+    border: none;
+    border-radius:7px ;
+    position: absolute;
+}
+@keyframes anim{
+    0%{
+        border-left: 0px solid black;
+        border-right: 0px solid black;
+    }
+    100%{
+        border-right: 2px solid rgb(255, 230, 0);
+        border-left:2px solid rgb(255, 230, 0) ;
+    }
+}
+#page1:hover > #bc-page1{
+    
+    animation: anim 0.5s ease-in;
+}
+#page2:hover >#bc-page2{
+    animation: anim 0.5s  ease-in;
+}
+
+#add-sell{
+    background-color: rgb(0, 174, 255);
+    color: white;
+    height: 40px;
+    width: 150px;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+}
