@@ -29,7 +29,8 @@ const products = {
     "Gin intencion": 30.00,
     "Combo Red label": 140.00,
     "Combo cavalo branco": 130.00,
-    "Combo Gin intencion": 65.00
+    "Combo Gin intencion": 65.00,
+    "Ficha":2.0,
 };
 
 
@@ -70,8 +71,14 @@ isSelled.addEventListener('click',()=>{
 
 const clearTotalbtn = document.getElementById('clear-total')
 clearTotalbtn.addEventListener('click',()=>{
-    let lsitmTOTAL = JSON.parse(localStorage.getItem('sells'))
-    lsitmTOTAL.total = 0
-    localStorage.setItem('sells',JSON.stringify(lsitmTOTAL))
-    totalSell.innerHTML = 'venda total: $0' 
+    const resp = confirm('quer mesmo zerar o total ?')
+    if(resp == true){
+        let lsitmTOTAL = JSON.parse(localStorage.getItem('sells'))
+        lsitmTOTAL.total = 0
+        localStorage.setItem('sells',JSON.stringify(lsitmTOTAL))
+        totalSell.innerHTML = 'venda total: $0'
+    }else{
+        console.log('nao zerou')
+    }
+    
 })
