@@ -5,30 +5,37 @@
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="adega-do-massa-icon.ico" type="image/x-icon">
     <title> Adega-do-massa </title>
 </head>
 <body>
 
-    <main>
-    <div id="pages">
-        <a href="index.html" id="page1"><div id="bc-page1"></div> preços  </a>
-        <a href="index2.html" id="page2"> <div id="bc-page2"></div> Vendas </a>
-    </div>
-    <header> ADEGA  DO  MASSA </header>
-    <div id="main-div">
     
-    <input list="produtos" id="produto" name="produto" placeholder="pesquise o produto aqui:  ">
-    <datalist id="produtos">
-        <option value="Cerveja Antártica Boa Lata">
-        <option value="Cerveja Amstel Lata 350 ML">
-        <option value="Cerveja império Lata 350ML">
-        <option value="Cerveja Budweiser Lata 350ML">
-        <option value="Cerveja Antártica GF 300ML">
-        <option value="Cerveja Heineken LT">
-        <option value="Cerveja Heineken LN">
-        <option value="Cerveja Skol GF 300 ML">
+    <main>
+        <div id="menu-bar">
+            <img src="adega-do-massa-icon.ico" alt="">
+            <p id="title-adg-massa">ADEGA DO MASSA</p>   
+            <div id="pages-div">
+            <a href="index.html" id="page1"> preços  </a>    
+              <a href="index2.html" id="page2"> Vendas</a>  
+            </div>
+            </div>
+    <div id="main-div">
+       <div id="input-div">
+        <input list="produtos" id="produto" name="produto" placeholder="pesquise o produto aqui:  ">
+        <button id="serch-pd"><i class="fa-solid fa-magnifying-glass"></i> </button>
+    </div>
+        <datalist id="produtos">
+        <option value="Antártica Boa Lata">
+        <option value="Amstel Lata 350 ML">
+        <option value="império Lata 350ML">
+        <option value="Budweiser Lata 350ML">
+        <option value="Antártica GF 300ML">
+        <option value="Heineken LT">
+        <option value="Heineken LN">
+        <option value="Skol GF 300 ML">
         <option value="Heineken zero">
-        <option value="Cerveja Corona">
+        <option value="Corona">
         <option value="Coca lata">
         <option value="Guaraná lata">
         <option value="Água">
@@ -52,11 +59,13 @@
         <option value="Combo Gin intencion">
         <option value="Ficha">    
     </datalist>
-     <button id="serch-pd"> <i class="fa-solid fa-magnifying-glass-dollar"></i></button>
-    <div id="product-div">
+    <div id="product-search-div">
         <p id="product"></p>
         <p id="price"></p>
     </div>
+    <div id="prod-div">
+    </div>
+
     <button id="is-selled">Vendido</button>
     </div>
     <p id="total-sell"></p>
